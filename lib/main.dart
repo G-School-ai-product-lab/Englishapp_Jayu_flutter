@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
+import 'core/services/firebase_service.dart';
 import 'data/datasources/local/database/app_database.dart';
 import 'presentation/screens/home/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
+  // NOTE: Uncomment this after configuring GoogleService-Info.plist
+  await FirebaseService.initialize();
 
   // Initialize database
   await AppDatabase.database;

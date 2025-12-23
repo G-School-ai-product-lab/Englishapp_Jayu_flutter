@@ -61,5 +61,190 @@
     "level": "intermediate",
     "isDefault": true,
     "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_004",
+    "title": "Past Simple Tense",
+    "explanation": "과거 시제는 과거에 일어난 일을 표현할 때 사용합니다.",
+    "rules": [
+      "주어 + 동사의 과거형",
+      "긍정문: I studied / He went",
+      "부정문: I didn't study / He didn't go",
+      "의문문: Did you study? / Did he go?"
+    ],
+    "exampleSentences": [
+      "I studied English last night.",
+      "She went to Paris last year.",
+      "They didn't watch the movie.",
+      "Did you finish your homework?"
+    ],
+    "category": "tense",
+    "level": "beginner",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_005",
+    "title": "Future Tense (will)",
+    "explanation": "미래 시제는 미래에 일어날 일을 표현할 때 사용합니다.",
+    "rules": [
+      "주어 + will + 동사원형",
+      "긍정문: I will study",
+      "부정문: I will not (won't) study",
+      "의문문: Will you study?"
+    ],
+    "exampleSentences": [
+      "I will study harder next semester.",
+      "She will visit Korea next month.",
+      "They won't be late.",
+      "Will you help me with this?"
+    ],
+    "category": "tense",
+    "level": "beginner",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_006",
+    "title": "Comparatives and Superlatives",
+    "explanation": "비교급과 최상급은 둘 이상을 비교할 때 사용합니다.",
+    "rules": [
+      "비교급: -er / more + 형용사 + than",
+      "최상급: the -est / the most + 형용사",
+      "불규칙 형용사: good-better-best, bad-worse-worst"
+    ],
+    "exampleSentences": [
+      "She is taller than her brother.",
+      "This is the most interesting book I've ever read.",
+      "English is easier than I thought.",
+      "He is the best student in the class."
+    ],
+    "category": "adjectives",
+    "level": "intermediate",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_007",
+    "title": "Modal Verbs (can, should, must)",
+    "explanation": "조동사는 가능성, 의무, 허가 등을 나타낼 때 사용합니다.",
+    "rules": [
+      "can: 능력, 가능성",
+      "should: 조언, 권유",
+      "must: 의무, 강한 추측",
+      "조동사 + 동사원형"
+    ],
+    "exampleSentences": [
+      "I can speak English.",
+      "You should study more.",
+      "We must finish this today.",
+      "Can you help me?"
+    ],
+    "category": "modals",
+    "level": "intermediate",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_008",
+    "title": "Conditional Sentences (Type 1)",
+    "explanation": "조건문은 특정 조건이 충족될 때 일어날 일을 표현합니다.",
+    "rules": [
+      "If + 현재 시제, will + 동사원형",
+      "실현 가능한 미래 상황",
+      "When도 같은 패턴으로 사용 가능"
+    ],
+    "exampleSentences": [
+      "If it rains, I will stay home.",
+      "If you study hard, you will pass the exam.",
+      "We will go to the beach if the weather is nice.",
+      "When I finish my homework, I will watch TV."
+    ],
+    "category": "conditionals",
+    "level": "intermediate",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_009",
+    "title": "Passive Voice",
+    "explanation": "수동태는 행동의 대상을 강조할 때 사용합니다.",
+    "rules": [
+      "be동사 + 과거분사",
+      "현재: am/is/are + 과거분사",
+      "과거: was/were + 과거분사",
+      "미래: will be + 과거분사"
+    ],
+    "exampleSentences": [
+      "English is spoken all over the world.",
+      "The book was written by Shakespeare.",
+      "The homework will be checked tomorrow.",
+      "The house is being built now."
+    ],
+    "category": "voice",
+    "level": "advanced",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_010",
+    "title": "Reported Speech",
+    "explanation": "간접화법은 다른 사람이 한 말을 전달할 때 사용합니다.",
+    "rules": [
+      "현재 시제 → 과거 시제",
+      "say → said, tell → told",
+      "시간 표현 변화: today → that day, tomorrow → the next day"
+    ],
+    "exampleSentences": [
+      "He said, 'I am tired.' → He said (that) he was tired.",
+      "She told me, 'I will help you.' → She told me (that) she would help me.",
+      "They said, 'We can do it.' → They said (that) they could do it."
+    ],
+    "category": "speech",
+    "level": "advanced",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_011",
+    "title": "Relative Clauses",
+    "explanation": "관계절은 명사를 수식하는 절입니다.",
+    "rules": [
+      "who: 사람",
+      "which: 사물",
+      "that: 사람/사물",
+      "where: 장소"
+    ],
+    "exampleSentences": [
+      "The person who called you is my friend.",
+      "This is the book which I bought yesterday.",
+      "Seoul is the city where I was born.",
+      "I know a teacher that speaks five languages."
+    ],
+    "category": "clauses",
+    "level": "advanced",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "grammar_012",
+    "title": "Gerunds and Infinitives",
+    "explanation": "동명사와 부정사는 동사를 명사처럼 사용하는 방법입니다.",
+    "rules": [
+      "동명사: 동사-ing (명사 역할)",
+      "부정사: to + 동사원형",
+      "일부 동사는 둘 다 사용 가능",
+      "일부 동사는 하나만 가능"
+    ],
+    "exampleSentences": [
+      "I enjoy reading books. (동명사)",
+      "I want to learn English. (부정사)",
+      "She likes swimming. (동명사)",
+      "They decided to go home. (부정사)"
+    ],
+    "category": "verbals",
+    "level": "advanced",
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
   }
 ]

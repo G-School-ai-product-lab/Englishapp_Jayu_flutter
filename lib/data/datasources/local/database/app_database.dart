@@ -23,7 +23,27 @@ class AppDatabase {
       path,
       version: AppConstants.dbVersion,
       onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
     );
+  }
+
+  static Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      // Delete old default data
+      await db.delete(
+        AppConstants.vocabularyTable,
+        where: 'is_default = ?',
+        whereArgs: [1],
+      );
+      await db.delete(
+        AppConstants.grammarTable,
+        where: 'is_default = ?',
+        whereArgs: [1],
+      );
+
+      // Load new default data
+      await _loadDefaultData(db, force: true);
+    }
   }
 
   static Future<void> _onCreate(Database db, int version) async {
@@ -118,15 +138,17 @@ class AppDatabase {
     await _loadDefaultData(db);
   }
 
-  static Future<void> _loadDefaultData(Database db) async {
+  static Future<void> _loadDefaultData(Database db, {bool force = false}) async {
     // Check if default data already loaded
-    final vocabCount = Sqflite.firstIntValue(
-      await db.rawQuery(
-          'SELECT COUNT(*) FROM ${AppConstants.vocabularyTable} WHERE is_default = 1'),
-    );
+    if (!force) {
+      final vocabCount = Sqflite.firstIntValue(
+        await db.rawQuery(
+            'SELECT COUNT(*) FROM ${AppConstants.vocabularyTable} WHERE is_default = 1'),
+      );
 
-    if (vocabCount != null && vocabCount > 0) {
-      return; // Already loaded
+      if (vocabCount != null && vocabCount > 0) {
+        return; // Already loaded
+      }
     }
 
     try {

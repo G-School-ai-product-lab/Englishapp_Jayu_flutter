@@ -54,7 +54,7 @@
       "I don't understand the question."
     ],
     "partOfSpeech": "verb",
-    "category": "intermediate",
+    "category": "beginner",
     "isMemorized": false,
     "isDefault": true,
     "createdAt": "2024-01-01T00:00:00.000Z"
@@ -69,6 +69,231 @@
       "Her skills have improved a lot."
     ],
     "partOfSpeech": "verb",
+    "category": "beginner",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_006",
+    "word": "remember",
+    "meaning": "기억하다",
+    "pronunciation": "/rɪˈmembər/",
+    "exampleSentences": [
+      "I can't remember his name.",
+      "Please remember to bring your book."
+    ],
+    "partOfSpeech": "verb",
+    "category": "beginner",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_007",
+    "word": "achieve",
+    "meaning": "성취하다",
+    "pronunciation": "/əˈtʃiːv/",
+    "exampleSentences": [
+      "She achieved her goals.",
+      "We can achieve anything if we try hard."
+    ],
+    "partOfSpeech": "verb",
+    "category": "intermediate",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_008",
+    "word": "communicate",
+    "meaning": "의사소통하다",
+    "pronunciation": "/kəˈmjuːnɪkeɪt/",
+    "exampleSentences": [
+      "It's important to communicate clearly.",
+      "They communicate via email."
+    ],
+    "partOfSpeech": "verb",
+    "category": "intermediate",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_009",
+    "word": "develop",
+    "meaning": "발전시키다",
+    "pronunciation": "/dɪˈveləp/",
+    "exampleSentences": [
+      "We need to develop new skills.",
+      "The company is developing a new product."
+    ],
+    "partOfSpeech": "verb",
+    "category": "intermediate",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_010",
+    "word": "challenge",
+    "meaning": "도전, 도전하다",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "exampleSentences": [
+      "This is a big challenge for me.",
+      "I like to challenge myself."
+    ],
+    "partOfSpeech": "noun/verb",
+    "category": "intermediate",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_011",
+    "word": "analyze",
+    "meaning": "분석하다",
+    "pronunciation": "/ˈænəlaɪz/",
+    "exampleSentences": [
+      "We need to analyze the data carefully.",
+      "Scientists analyze the results."
+    ],
+    "partOfSpeech": "verb",
+    "category": "advanced",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_012",
+    "word": "comprehend",
+    "meaning": "이해하다, 파악하다",
+    "pronunciation": "/ˌkɑːmprɪˈhend/",
+    "exampleSentences": [
+      "It's difficult to comprehend the complexity.",
+      "Do you comprehend the situation?"
+    ],
+    "partOfSpeech": "verb",
+    "category": "advanced",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_013",
+    "word": "demonstrate",
+    "meaning": "증명하다, 보여주다",
+    "pronunciation": "/ˈdemənstreɪt/",
+    "exampleSentences": [
+      "Let me demonstrate how it works.",
+      "The results demonstrate clear progress."
+    ],
+    "partOfSpeech": "verb",
+    "category": "advanced",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_014",
+    "word": "evaluate",
+    "meaning": "평가하다",
+    "pronunciation": "/ɪˈvæljueɪt/",
+    "exampleSentences": [
+      "Teachers evaluate student performance.",
+      "We need to evaluate all options."
+    ],
+    "partOfSpeech": "verb",
+    "category": "advanced",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_015",
+    "word": "implement",
+    "meaning": "실행하다, 구현하다",
+    "pronunciation": "/ˈɪmplɪment/",
+    "exampleSentences": [
+      "We will implement the new system next month.",
+      "It's time to implement our plan."
+    ],
+    "partOfSpeech": "verb",
+    "category": "advanced",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_016",
+    "word": "book",
+    "meaning": "책",
+    "pronunciation": "/bʊk/",
+    "exampleSentences": [
+      "I'm reading a good book.",
+      "She has many books on her shelf."
+    ],
+    "partOfSpeech": "noun",
+    "category": "beginner",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_017",
+    "word": "teacher",
+    "meaning": "선생님",
+    "pronunciation": "/ˈtiːtʃər/",
+    "exampleSentences": [
+      "My teacher is very kind.",
+      "She wants to be a teacher."
+    ],
+    "partOfSpeech": "noun",
+    "category": "beginner",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_018",
+    "word": "student",
+    "meaning": "학생",
+    "pronunciation": "/ˈstuːdnt/",
+    "exampleSentences": [
+      "I am a university student.",
+      "All students must complete the assignment."
+    ],
+    "partOfSpeech": "noun",
+    "category": "beginner",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_019",
+    "word": "knowledge",
+    "meaning": "지식",
+    "pronunciation": "/ˈnɑːlɪdʒ/",
+    "exampleSentences": [
+      "Knowledge is power.",
+      "She has extensive knowledge of science."
+    ],
+    "partOfSpeech": "noun",
+    "category": "intermediate",
+    "isMemorized": false,
+    "isDefault": true,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "vocab_020",
+    "word": "experience",
+    "meaning": "경험",
+    "pronunciation": "/ɪkˈspɪriəns/",
+    "exampleSentences": [
+      "Experience is the best teacher.",
+      "I had a great experience traveling."
+    ],
+    "partOfSpeech": "noun",
     "category": "intermediate",
     "isMemorized": false,
     "isDefault": true,
