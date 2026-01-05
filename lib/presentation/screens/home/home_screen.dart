@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/theme/app_colors.dart';
 import '../vocabulary/vocabulary_list_screen.dart';
 import '../grammar/grammar_list_screen.dart';
+import '../quiz/quiz_screen.dart';
+import '../progress/progress_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,8 +17,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screens = [
     const VocabularyListScreen(),
     const GrammarListScreen(),
-    const QuizTab(),
-    const ProgressTab(),
+    const QuizScreen(),
+    const ProgressScreen(),
   ];
 
   @override
@@ -49,59 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
             label: '진도',
           ),
         ],
-      ),
-    );
-  }
-}
-
-// Temporary placeholder widgets
-class QuizTab extends StatelessWidget {
-  const QuizTab({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('퀴즈')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.quiz, size: 80, color: AppColors.quizCard),
-            const SizedBox(height: 16),
-            const Text(
-              '퀴즈 기능',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            const Text('곧 구현될 예정입니다'),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ProgressTab extends StatelessWidget {
-  const ProgressTab({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('학습 진도')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.bar_chart, size: 80, color: AppColors.progressCard),
-            const SizedBox(height: 16),
-            const Text(
-              '진도 추적 기능',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            const Text('곧 구현될 예정입니다'),
-          ],
-        ),
       ),
     );
   }
