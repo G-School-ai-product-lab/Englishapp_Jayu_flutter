@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/utils/page_transitions.dart';
 import '../../../data/models/vocabulary/vocabulary_item.dart';
 import '../../providers/vocabulary_provider.dart';
 import 'flashcard_screen.dart';
@@ -31,9 +32,7 @@ class _VocabularyListScreenState extends ConsumerState<VocabularyListScreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const FlashcardScreen(),
-                ),
+                PageTransitions.slideFromRight(const FlashcardScreen()),
               );
             },
             tooltip: '플래시카드',
@@ -115,7 +114,21 @@ class _VocabularyListScreenState extends ConsumerState<VocabularyListScreen> {
                   itemCount: filteredList.length,
                   itemBuilder: (context, index) {
                     final vocab = filteredList[index];
-                    return _buildVocabularyItem(vocab);
+                    return TweenAnimationBuilder<double>(
+                      tween: Tween(begin: 0.0, end: 1.0),
+                      duration: Duration(milliseconds: 300 + (index * 50)),
+                      curve: Curves.easeOutCubic,
+                      builder: (context, value, child) {
+                        return Transform.translate(
+                          offset: Offset(0, 20 * (1 - value)),
+                          child: Opacity(
+                            opacity: value,
+                            child: child,
+                          ),
+                        );
+                      },
+                      child: _buildVocabularyItem(vocab),
+                    );
                   },
                 );
               },
@@ -145,9 +158,7 @@ class _VocabularyListScreenState extends ConsumerState<VocabularyListScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => const AddEditVocabularyScreen(),
-            ),
+            PageTransitions.scale(const AddEditVocabularyScreen()),
           );
         },
         child: const Icon(Icons.add),
@@ -204,9 +215,7 @@ class _VocabularyListScreenState extends ConsumerState<VocabularyListScreen> {
               onPressed: (context) {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => AddEditVocabularyScreen(vocabulary: vocab),
-                  ),
+                  PageTransitions.slideFromRight(AddEditVocabularyScreen(vocabulary: vocab)),
                 );
               },
               backgroundColor: AppColors.warning,

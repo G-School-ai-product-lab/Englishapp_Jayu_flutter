@@ -38,4 +38,11 @@ class AppColors {
   static const Color notMemorized = Color(0xFF6B7280);
   static const Color correct = Color(0xFF10B981);
   static const Color incorrect = Color(0xFFEF4444);
+
+  // Dark mode colors
+  static const Color darkBackground = Color(0xFF111827);
+  static const Color darkSurface = Color(0xFF1F2937);
+  static const Color darkSurfaceLight = Color(0xFF374151);
+  static const Color darkTextPrimary = Color(0xFFF9FAFB);
+  static const Color darkTextSecondary = Color(0xFFD1D5DB);
 }

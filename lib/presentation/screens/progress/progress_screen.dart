@@ -3,7 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/utils/page_transitions.dart';
 import '../../providers/progress_provider.dart';
+import '../settings/settings_screen.dart';
 
 class ProgressScreen extends ConsumerWidget {
   const ProgressScreen({super.key});
@@ -16,6 +18,15 @@ class ProgressScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('학습 진도'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              Navigator.push(
+                context,
+                PageTransitions.slideFromRight(const SettingsScreen()),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: () {
