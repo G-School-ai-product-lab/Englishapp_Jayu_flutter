@@ -3,7 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/theme/app_theme.dart';
 import 'data/datasources/local/database/app_database.dart';
 import 'presentation/screens/home/home_screen.dart';
+import 'presentation/screens/auth/login_screen.dart';
 import 'presentation/providers/theme_provider.dart';
+import 'presentation/providers/auth_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,13 +22,14 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(themeProvider);
+    final authState = ref.watch(authProvider);
 
     return MaterialApp(
       title: '영어 학습 앱',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: themeMode,
-      home: const HomeScreen(),
+      home: authState.isAuthenticated ? const HomeScreen() : const LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

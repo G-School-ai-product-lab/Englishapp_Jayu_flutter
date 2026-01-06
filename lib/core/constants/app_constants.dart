@@ -1,9 +1,10 @@
 class AppConstants {
   // Database
   static const String dbName = 'english_learning.db';
-  static const int dbVersion = 2;
+  static const int dbVersion = 3;
 
   // Table names
+  static const String usersTable = 'users';
   static const String vocabularyTable = 'vocabulary';
   static const String grammarTable = 'grammar';
   static const String grammarPracticeTable = 'grammar_practice';

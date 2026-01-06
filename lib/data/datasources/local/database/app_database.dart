@@ -44,9 +44,39 @@ class AppDatabase {
       // Load new default data
       await _loadDefaultData(db, force: true);
     }
+
+    if (oldVersion < 3) {
+      // Add users table in version 3
+      await db.execute('''
+        CREATE TABLE ${AppConstants.usersTable} (
+          id TEXT PRIMARY KEY,
+          email TEXT UNIQUE NOT NULL,
+          name TEXT NOT NULL,
+          password_hash TEXT NOT NULL,
+          profile_image_url TEXT,
+          created_at INTEGER NOT NULL,
+          last_login_at INTEGER,
+          preferences TEXT
+        )
+      ''');
+    }
   }
 
   static Future<void> _onCreate(Database db, int version) async {
+    // Create users table
+    await db.execute('''
+      CREATE TABLE ${AppConstants.usersTable} (
+        id TEXT PRIMARY KEY,
+        email TEXT UNIQUE NOT NULL,
+        name TEXT NOT NULL,
+        password_hash TEXT NOT NULL,
+        profile_image_url TEXT,
+        created_at INTEGER NOT NULL,
+        last_login_at INTEGER,
+        preferences TEXT
+      )
+    ''');
+
     // Create vocabulary table
     await db.execute('''
       CREATE TABLE ${AppConstants.vocabularyTable} (
